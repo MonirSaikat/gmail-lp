@@ -1,248 +1,498 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+    />
     <title>Gmail</title>
-</head>
-<body class="overflow-x-hidden">
+  </head>
+  <body class="overflow-x-hidden">
     <nav class="bg-white py-2 shadow-md fixed w-full top-0 left-0 z-10">
-        <div class="container mx-auto flex justify-between">
-            <a href="#" class="flex items-center">
-                <img src="./img/gmail-logo.png" alt="Logo" class="w-8">
-                <span class="text-xl mb-1 text-gray-500 font-semibold ml-3">Gmail</span>
-            </a>
-    
-            <button class="py-2 px-5 border transition-all  rounded-md text-blue-600 font-medium  hover:bg-blue-100 hover:border-blue-600">Sign in</button>        
+      <div class="container mx-auto flex justify-between">
+        <a href="#" class="flex items-center">
+          <img src="./img/gmail-logo.png" alt="Logo" class="w-8" />
+          <span class="text-xl mb-1 text-gray-500 font-semibold ml-3"
+            >Gmail</span
+          >
+        </a>
+
+        <div class="flex">
+            <button
+                class="py-2 px-5 border transition-all rounded-md text-blue-600 font-medium hover:bg-blue-100 hover:border-blue-600"
+            >
+                Sign in
+            </button>
+            <button
+                class="bg-blue-600 h-11 hidden md:flex items-center text-white py-3 px-5 font-medium rounded-md hover:bg-blue-800 transition ease-in ml-2"
+            >
+                Create account
+            </button>
         </div>
+      </div>
     </nav>
 
     <header class="py-16">
-        <div class="container md:flex items-center">
-            <div class="w-10/12 md:w-1/2 mb-4">
-                <h2 class="text-3xl md:text-4xl mt-10 tracking-tighter md:tracking-normal font-semibold">Secure, smart, and easy to use email</h2>
-                <p class="text-gray-500 my-5">Get more done with Gmail. Now integrated with Google Chat, Google Meet, and more, all in one place.</p>
-                <button class="bg-blue-600 text-white py-3 px-5 mr-2 font-semibold rounded-md hover:bg-blue-800 transition ease-in text-sm">Get Gmail</button>
-                <button class="text-blue-500 py-3 px-5 mr-2 font-semibold rounded-md hover:bg-gray-100 transition ease-in text-sm">For work</button>
-            </div>
-            <div class="md:w-1/2">
-                <img src="./img/banner-one.jpg" alt="" class="max-w-full w-full h-auto ">
-            </div>
+      <div class="container md:flex items-center">
+        <div class="w-10/12 md:w-1/2 mb-4">
+          <h2
+            class="text-3xl md:max-w-md leading-relaxed md:text-4xl mt-10 tracking-tighter md:tracking-tight font-semibold"
+          >
+            Secure, smart, and easy to use email
+          </h2>
+          <p class="text-gray-500 my-5 md:max-w-lg">
+            Get more done with Gmail. Now integrated with Google Chat, Google
+            Meet, and more, all in one place.
+          </p>
+          <button
+            class="bg-blue-600 text-white py-3 px-5 mr-2 font-semibold rounded-md hover:bg-blue-800 transition ease-in text-sm"
+          >
+            Get Gmail
+          </button>
+          <button
+            class="text-blue-500 py-3 px-5 mr-2 font-semibold rounded-md hover:bg-gray-100 transition ease-in text-sm"
+          >
+            For work
+          </button>
         </div>
+        <div class="md:w-1/2">
+          <img
+            src="./img/banner-one.jpg"
+            alt=""
+            class="max-w-full w-full h-auto"
+          />
+        </div>
+      </div>
     </header>
 
     <section class="my-5 py-12">
-        <div class="container">
-            <h2 class="text-2xl leading-8 font-semibold">Email that's secure, private, and puts you in control.</h2>
+      <div class="container">
+        <h2 class="text-2xl leading-8 font-semibold">
+          Email that's secure, private, and puts you in control.
+        </h2>
 
-            <div class="my-4">
-                <a href="#" class="block pl-5 my-6 border-l-4 border-l-blue-700">
-                    <h3 class="text-xl mb-3 font-semibold text-blue-700">We never use your Gmail content for any ads purposes</h3>
-                    <p class="text-sm text-gray-500">Gmail uses industry-leading encryption for all messages you receive and send. We never use your Gmail content to personalize ads.</p>
+        <div class="md:flex items-center">
+            <div class="my-4 md:w-1/2">
+                <a href="#" class="email-slide-controller block pl-5 my-6 border-l-4 group transition ease-in active [&.active]:border-l-blue-700 hover:border-l-blue-700" data-target="email-slide1">
+                    <h3 class="text-xl mb-3 font-semibold text-gray-600 group-[.active]:text-blue-700">
+                        We never use your Gmail content for any ads purposes
+                    </h3>
+                    <p class="text-sm text-gray-600 font-medium">
+                        Gmail uses industry-leading encryption for all messages you
+                        receive and send. We never use your Gmail content to personalize
+                        ads.
+                    </p>
                 </a>
 
-                <a href="#" class="block pl-5 my-6 border-l-4 border-l-gray-300">
-                    <h3 class="text-xl mb-3 font-semibold text-gray-600">Gmail keeps over a billion people safe every day</h3>
-                    <p class="text-sm text-gray-500">Gmail uses industry-leading encryption for all messages you receive and send. We never use your Gmail content to personalize ads.</p>
+                <a href="#" class="email-slide-controller block pl-5 my-6 border-l-4 border-l-gray-300 transition ease-in [&.active]:border-l-blue-700 hover:border-l-blue-700 group " data-target="email-slide2">
+                    <h3 class="text-xl mb-3 font-semibold text-gray-600 group-[.active]:text-blue-700">
+                        Gmail keeps over a billion people safe every day
+                    </h3>
+                    <p class="text-sm text-gray-600 font-medium">
+                        Gmail uses industry-leading encryption for all messages you
+                        receive and send. We never use your Gmail content to personalize
+                        ads.
+                    </p>
                 </a>
 
-                <a href="#" class="block pl-5 my-6 border-l-4 border-l-gray-300">
-                    <h3 class="text-xl mb-3 font-semibold text-gray-600">The most advanced phishing protections available</h3>
-                    <p class="text-sm text-gray-500">Gmail uses industry-leading encryption for all messages you receive and send. We never use your Gmail content to personalize ads.</p>
+                <a href="#" class="email-slide-controller block pl-5 my-6 border-l-4 border-l-gray-300 transition ease-in [&.active]:border-l-blue-700 hover:border-l-blue-700 group " data-target="email-slide3">
+                    <h3 class="text-xl mb-3 font-semibold text-gray-600 group-[.active]:text-blue-700">
+                        The most advanced phishing protections available
+                    </h3>
+                    <p class="text-sm text-gray-600 font-medium">
+                        Gmail uses industry-leading encryption for all messages you
+                        receive and send. We never use your Gmail content to personalize
+                        ads.
+                    </p>
                 </a>
             </div>
+            <div class="md:w-1/2 text-center">
+                <div class="email-slide px-10" data-slide="email-slide1"><img src="./img/banner-two.jpg" alt="Banner"></div>
+                <div class="email-slide px-10 hidden" data-slide="email-slide2"><img src="./img/banner-one.jpg" alt="Banner"></div>
+                <div class="email-slide px-10 hidden" data-slide="email-slide3"><img src="./img/banner-three.jpg" alt="Banner"></div>
+            </div>
         </div>
+      </div>
     </section>
 
     <section>
-        <div class="container">
-            <h2 class="text-2xl leading-8 font-semibold">Get more done with Gmail</h2>
-            <div class="my-4">
-                <a href="#" class="block pl-5 my-6 border-l-4 border-l-blue-700">
-                    <h3 class="text-xl mb-3 font-semibold text-blue-700">We never use your Gmail content for any ads purposes</h3>
-                    <p class="text-sm text-gray-500">Gmail uses industry-leading encryption for all messages you receive and send. We never use your Gmail content to personalize ads.</p>
-                </a>
-                <a href="#" class="block pl-5 my-6 border-l-4 border-l-gray-300">
-                    <h3 class="text-xl mb-3 font-semibold text-gray-600">Gmail keeps over a billion people safe every day</h3>
-                    <p class="text-sm text-gray-500">Gmail uses industry-leading encryption for all messages you receive and send. We never use your Gmail content to personalize ads.</p>
-                </a>
-                <a href="#" class="block pl-5 my-6 border-l-4 border-l-gray-300">
-                    <h3 class="text-xl mb-3 font-semibold text-gray-600">The most advanced phishing protections available</h3>
-                    <p class="text-sm text-gray-500">Gmail uses industry-leading encryption for all messages you receive and send. We never use your Gmail content to personalize ads.</p>
-                </a>
-            </div>
+      <div class="container">
+        <h2 class="text-2xl leading-8 font-semibold">
+          Get more done with Gmail
+        </h2>
+        <div class="my-4">
+          <a href="#" class="block pl-5 my-6 border-l-4 hover:border-l-blue-700 group">
+            <h3 class="text-xl mb-3 font-semibold   group-hover:text-blue-700">
+              We never use your Gmail content for any ads purposes
+            </h3>
+            <p class="text-sm text-gray-500">
+              Gmail uses industry-leading encryption for all messages you
+              receive and send. We never use your Gmail content to personalize
+              ads.
+            </p>
+          </a>
+          <a href="#" class="block pl-5 my-6 border-l-4 border-l-gray-300 hover:border-l-blue-700 group">
+            <h3 class="text-xl mb-3 font-semibold text-gray-600 group-hover:text-blue-700">
+              Gmail keeps over a billion people safe every day
+            </h3>
+            <p class="text-sm text-gray-500">
+              Gmail uses industry-leading encryption for all messages you
+              receive and send. We never use your Gmail content to personalize
+              ads.
+            </p>
+          </a>
+          <a href="#" class="block pl-5 my-6 border-l-4 border-l-gray-300 hover:border-l-blue-700 group">
+            <h3 class="text-xl mb-3 font-semibold text-gray-600 group-hover:text-blue-700">
+              The most advanced phishing protections available
+            </h3>
+            <p class="text-sm text-gray-500">
+              Gmail uses industry-leading encryption for all messages you
+              receive and send. We never use your Gmail content to personalize
+              ads.
+            </p>
+          </a>
         </div>
+      </div>
     </section>
 
     <section class="py-12 my-10 bg-gray-100">
-        <div class="container md:flex">
-            <div class="max-w-md mx-auto md:w-1/3 px-8 mb-10">
-                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center mb-3">
-                    <i class="fa fa-check text-white"></i>
-                </div>
-                <h2 class="text-xl leading-8 mb-3 font-semibold">Works with other tools</h2>
-                <p class="text-gray-500 text-sm md:text-lg">Gmail works very well in desktop clients like Microsoft Outlook, Apple Mail and Mozilla Thunderbird, along with contacts and event sync.</p> 
-            </div>
-            <div class="max-w-md mx-auto md:w-1/3 px-8 mb-10">
-                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center mb-3">
-                    <i class="fa fa-wifi text-white"></i>
-                </div>
-                <h2 class="text-xl leading-8 mb-3 font-semibold">Get more done even when offline</h2>
-                <p class="text-gray-500 text-sm md:text-lg">Gmail works very well in desktop clients like Microsoft Outlook, Apple Mail and Mozilla Thunderbird, along with contacts and event sync.</p> 
-            </div>
-            <div class="max-w-md mx-auto md:w-1/3 px-8 mb-10">
-                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center mb-3">
-                    <i class="fa fa-laptop text-white"></i>
-                </div>
-                <h2 class="text-xl leading-8 mb-3 font-semibold">Enjoy the benefits of Gmail on any device</h2>
-                <p class="text-gray-500 text-sm md:text-lg">Gmail works very well in desktop clients like Microsoft Outlook, Apple Mail and Mozilla Thunderbird, along with contacts and event sync.</p> 
-            </div>
+      <div class="container md:flex">
+        <div class="max-w-md mx-auto md:w-1/3 px-8 mb-10">
+          <div
+            class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center mb-3"
+          >
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <h2 class="text-xl leading-8 mb-3 font-semibold">
+            Works with other tools
+          </h2>
+          <p class="text-gray-500 text-sm md:text-lg">
+            Gmail works very well in desktop clients like Microsoft Outlook,
+            Apple Mail and Mozilla Thunderbird, along with contacts and event
+            sync.
+          </p>
         </div>
+        <div class="max-w-md mx-auto md:w-1/3 px-8 mb-10">
+          <div
+            class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center mb-3"
+          >
+            <i class="fa fa-wifi text-white"></i>
+          </div>
+          <h2 class="text-xl leading-8 mb-3 font-semibold">
+            Get more done even when offline
+          </h2>
+          <p class="text-gray-500 text-sm md:text-lg">
+            Gmail works very well in desktop clients like Microsoft Outlook,
+            Apple Mail and Mozilla Thunderbird, along with contacts and event
+            sync.
+          </p>
+        </div>
+        <div class="max-w-md mx-auto md:w-1/3 px-8 mb-10">
+          <div
+            class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center mb-3"
+          >
+            <i class="fa fa-laptop text-white"></i>
+          </div>
+          <h2 class="text-xl leading-8 mb-3 font-semibold">
+            Enjoy the benefits of Gmail on any device
+          </h2>
+          <p class="text-gray-500 text-sm md:text-lg">
+            Gmail works very well in desktop clients like Microsoft Outlook,
+            Apple Mail and Mozilla Thunderbird, along with contacts and event
+            sync.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="py-10 text-center">
-        <div class="max-w-screen-lg mx-auto">
-            <div class="flex justify-center mb-8">
-                <img class="w-8 mr-4" src="./img/gmail.svg" alt="chat">
-                <img class="w-8 mr-4" src="./img/calender.svg" alt="chat">
-                <img class="w-8 mr-4" src="./img/drive.svg" alt="chat">
-                <img class="w-8 mr-4" src="./img/docs.svg" alt="chat">
-                <img class="w-8 mr-4" src="./img/meet.svg" alt="chat">
-            </div>
-            <h1 class="text-2xl md:text-5xl font-bold mb-8">Gmail is now part of Google Workspace</h1>
-            <h2 class="text-xl md:text-2xl max-w-screen-md mx-auto text-gray-600">Collaborate quickly from any device, anytime, all from the same place.</h2>
-            <p class="text-gray-500 max-w-screen-md mx-auto my-10 leading-7 px-7">Google Workspace is a productivity and collaboration tool that helps individuals, teams and businesses stay up-to-date with everything. It's simple and innovative solution that includes all your favorite apps like Gmail, Calendar, Drive, Docs, Meet and more.</p>
-            <button class="text-sm md:text-lg text-blue-500 py-3 px-7 mr-2 font-semibold rounded-md hover:bg-gray-100 transition ease-in">Learn more</button>
+      <div class="max-w-screen-lg mx-auto">
+        <div class="flex justify-center mb-8">
+          <img class="w-8 mr-4" src="./img/gmail.svg" alt="chat" />
+          <img class="w-8 mr-4" src="./img/calender.svg" alt="chat" />
+          <img class="w-8 mr-4" src="./img/drive.svg" alt="chat" />
+          <img class="w-8 mr-4" src="./img/docs.svg" alt="chat" />
+          <img class="w-8 mr-4" src="./img/meet.svg" alt="chat" />
         </div>
+        <h1 class="text-2xl md:text-5xl font-bold mb-8">
+          Gmail is now part of Google Workspace
+        </h1>
+        <h2 class="text-xl md:text-2xl max-w-screen-md mx-auto text-gray-600">
+          Collaborate quickly from any device, anytime, all from the same place.
+        </h2>
+        <p class="text-gray-500 max-w-screen-md mx-auto my-10 leading-7 px-7">
+          Google Workspace is a productivity and collaboration tool that helps
+          individuals, teams and businesses stay up-to-date with everything.
+          It's simple and innovative solution that includes all your favorite
+          apps like Gmail, Calendar, Drive, Docs, Meet and more.
+        </p>
+        <button
+          class="text-sm md:text-lg text-blue-500 py-3 px-7 mr-2 font-semibold rounded-md hover:bg-gray-100 transition ease-in"
+        >
+          Learn more
+        </button>
+      </div>
     </section>
 
     <section class="bg-gray-100 py-8">
-        <div class="container">
-            <div class="md:flex md:flex-row-reverse relative pt-32 md:pt-0">
-                <div class="md:w-3/5">
-                    <div class="border-b-2 border-gray-300 py-5 slider">
-                        <div class="flex justify-between mt-4  cursor-pointer slider-controller">
-                            <p class="font-medium text-gray-700 w-3/4">How does Gmail keep my email conversations secure and private?</p>
-                            <d class="hidden icon">
-                                <i class="fa fa-chevron-up text-blue-600 text-2xl mt-1"></i>
-                            </d>
-                            <div class="icon"><i class="icon fa fa-chevron-down text-blue-600 text-2xl mt-1"></i></div>
-                        </div>
-                        <div class="py-5 hidden slider-body">
-                            <p class="text-sm text-gray-500 mt-3 leading-6">Gmail has always had strong security as a foundation. We work hard to protect you from spam, phishing and malware before it reaches your inbox. Our AI-enhanced spam-filtering capabilities block approximately 10 million spam emails every minute.</p>
-                        </div>                
-                    </div>  
-
-                    <div class="border-b-2 border-gray-300 py-5 slider">
-                        <div class="flex justify-between mt-4  cursor-pointer slider-controller">
-                            <p class="font-medium text-gray-700 w-3/4">Do you use my email for advertising?</p>
-                            <d class="hidden icon">
-                                <i class="fa fa-chevron-up text-blue-600 text-2xl mt-1"></i>
-                            </d>
-                            <div class="icon"><i class="icon fa fa-chevron-down text-blue-600 text-2xl mt-1"></i></div>
-                        </div>
-                        <div class="py-5 hidden slider-body">
-                            <p class="text-sm text-gray-500 mt-3 leading-6">Gmail has always had strong security as a foundation. We work hard to protect you from spam, phishing and malware before it reaches your inbox. Our AI-enhanced spam-filtering capabilities block approximately 10 million spam emails every minute.</p>
-                        </div>                
-                    </div>  
-
-                    <div class="border-b-2 border-gray-300 py-5 slider">
-                        <div class="flex justify-between mt-4  cursor-pointer slider-controller">
-                            <p class="font-medium text-gray-700 w-3/4">How can I keep my emails more safe and secure?</p>
-                            <d class="hidden icon">
-                                <i class="fa fa-chevron-up text-blue-600 text-2xl mt-1"></i>
-                            </d>
-                            <div class="icon"><i class="icon fa fa-chevron-down text-blue-600 text-2xl mt-1"></i></div>
-                        </div>
-                        <div class="py-5 hidden slider-body">
-                            <p class="text-sm text-gray-500 mt-3 leading-6">While Gmail's features are secure enough for most users, some accounts may require an extra layer of security. Google's Advanced Protection program protects users with high visibility and sensitive information, who are at risk of targeted online attacks.</p>
-                        </div>                
-                    </div>  
-
-                    <div class="border-b-2 border-gray-300 py-5 slider">
-                        <div class="flex justify-between mt-4  cursor-pointer slider-controller">
-                            <p class="font-medium text-gray-700 w-3/4">What if I want to use Gmail for work or my business?</p>
-                            <d class="hidden icon">
-                                <i class="fa fa-chevron-up text-blue-600 text-2xl mt-1"></i>
-                            </d>
-                            <div class="icon"><i class="icon fa fa-chevron-down text-blue-600 text-2xl mt-1"></i></div>
-                        </div>
-                        <div class="py-5 hidden slider-body">
-                            <p class="text-sm text-gray-500 mt-3 leading-6">Gmail is part of Google Workspace where you can choose from different plans. In addition to everything you love about Gmail, you get a custom email ID (@yourcompany.com), unlimited group email IDs, 99.9% guaranteed uptime, double storage on personal Gmail, no ads, 24/7 support, Microsoft Get Google Workspace sync for Outlook, and more.</p>
-                        </div>                
-                    </div>  
-
+      <div class="container">
+        <div class="md:flex md:flex-row-reverse relative pt-32 md:pt-0">
+          <div class="md:w-3/5">
+            <div class="border-b-2 border-gray-300 py-5 slider">
+              <div
+                class="flex justify-between mt-4 cursor-pointer slider-controller"
+              >
+                <p class="font-medium text-gray-700 w-3/4">
+                  How does Gmail keep my email conversations secure and private?
+                </p>
+                <d class="hidden icon">
+                  <i class="fa fa-chevron-up text-blue-600 text-2xl mt-1"></i>
+                </d>
+                <div class="icon">
+                  <i
+                    class="icon fa fa-chevron-down text-blue-600 text-2xl mt-1"
+                  ></i>
                 </div>
-                
-                <div class="md:w-2/5">
-                    <h2 class="absolute md:static top-0 text-4xl font-semibold mt-5 mb-10 leading-2 max-w-md">Find the answers you need</h2>
-                    <div class="bg-white p-5 mt-6 border rounded-md max-w-md">
-                        <h2 class="text-xl font-medium">Want more help?</h2>
-                        <p class="text-sm text-gray-500 my-4">Browsing tips and step-by-step instructions are made for both new and old users.</p>
-                        <button class="py-2 px-5 border transition-all  rounded-md text-blue-600 font-medium  hover:bg-blue-100 hover:border-blue-600">Help center</button>        
-                    </div>
-                </div>
+              </div>
+              <div class="py-5 hidden slider-body">
+                <p class="text-sm text-gray-500 mt-3 leading-6">
+                  Gmail has always had strong security as a foundation. We work
+                  hard to protect you from spam, phishing and malware before it
+                  reaches your inbox. Our AI-enhanced spam-filtering
+                  capabilities block approximately 10 million spam emails every
+                  minute.
+                </p>
+              </div>
             </div>
+
+            <div class="border-b-2 border-gray-300 py-5 slider">
+              <div
+                class="flex justify-between mt-4 cursor-pointer slider-controller"
+              >
+                <p class="font-medium text-gray-700 w-3/4">
+                  Do you use my email for advertising?
+                </p>
+                <d class="hidden icon">
+                  <i class="fa fa-chevron-up text-blue-600 text-2xl mt-1"></i>
+                </d>
+                <div class="icon">
+                  <i
+                    class="icon fa fa-chevron-down text-blue-600 text-2xl mt-1"
+                  ></i>
+                </div>
+              </div>
+              <div class="py-5 hidden slider-body">
+                <p class="text-sm text-gray-500 mt-3 leading-6">
+                  Gmail has always had strong security as a foundation. We work
+                  hard to protect you from spam, phishing and malware before it
+                  reaches your inbox. Our AI-enhanced spam-filtering
+                  capabilities block approximately 10 million spam emails every
+                  minute.
+                </p>
+              </div>
+            </div>
+
+            <div class="border-b-2 border-gray-300 py-5 slider">
+              <div
+                class="flex justify-between mt-4 cursor-pointer slider-controller"
+              >
+                <p class="font-medium text-gray-700 w-3/4">
+                  How can I keep my emails more safe and secure?
+                </p>
+                <d class="hidden icon">
+                  <i class="fa fa-chevron-up text-blue-600 text-2xl mt-1"></i>
+                </d>
+                <div class="icon">
+                  <i
+                    class="icon fa fa-chevron-down text-blue-600 text-2xl mt-1"
+                  ></i>
+                </div>
+              </div>
+              <div class="py-5 hidden slider-body">
+                <p class="text-sm text-gray-500 mt-3 leading-6">
+                  While Gmail's features are secure enough for most users, some
+                  accounts may require an extra layer of security. Google's
+                  Advanced Protection program protects users with high
+                  visibility and sensitive information, who are at risk of
+                  targeted online attacks.
+                </p>
+              </div>
+            </div>
+
+            <div class="border-b-2 border-gray-300 py-5 slider">
+              <div
+                class="flex justify-between mt-4 cursor-pointer slider-controller"
+              >
+                <p class="font-medium text-gray-700 w-3/4">
+                  What if I want to use Gmail for work or my business?
+                </p>
+                <d class="hidden icon">
+                  <i class="fa fa-chevron-up text-blue-600 text-2xl mt-1"></i>
+                </d>
+                <div class="icon">
+                  <i
+                    class="icon fa fa-chevron-down text-blue-600 text-2xl mt-1"
+                  ></i>
+                </div>
+              </div>
+              <div class="py-5 hidden slider-body">
+                <p class="text-sm text-gray-500 mt-3 leading-6">
+                  Gmail is part of Google Workspace where you can choose from
+                  different plans. In addition to everything you love about
+                  Gmail, you get a custom email ID (@yourcompany.com), unlimited
+                  group email IDs, 99.9% guaranteed uptime, double storage on
+                  personal Gmail, no ads, 24/7 support, Microsoft Get Google
+                  Workspace sync for Outlook, and more.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:w-2/5">
+            <h2
+              class="absolute md:static top-0 text-4xl font-semibold mt-5 mb-10 leading-2 max-w-md"
+            >
+              Find the answers you need
+            </h2>
+            <div class="bg-white p-5 mt-6 border rounded-md max-w-md">
+              <h2 class="text-xl font-medium">Want more help?</h2>
+              <p class="text-sm text-gray-500 my-4">
+                Browsing tips and step-by-step instructions are made for both
+                new and old users.
+              </p>
+              <button
+                class="py-2 px-5 border transition-all rounded-md text-blue-600 font-medium hover:bg-blue-100 hover:border-blue-600"
+              >
+                Help center
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="text-center py-8">
-        <div class="flex justify-center mb-2"><img src="./img/gmail.svg" alt="Gmail"></div>
-        <h2 class="max-w-sm leading-10 my-4 mt-8 text-4xl mx-auto">Show the world how it's done</h2>
-        <p class="text-2xl my-8 text-gray-500">Get started with a more powerful gmail.</p>
-        <div>
-            <button class="bg-blue-600 text-white py-3 px-5 mr-2 font-semibold rounded-md hover:bg-blue-800 transition ease-in text-sm">Create an account</button>
-            <br>
-            <button class="mt-4 w-40 text-blue-500 py-3 px-5 mr-2 font-semibold rounded-md hover:bg-gray-100 transition ease-in text-sm">For work</button>
-        </div>
-        <img src="./img/footer-img.jpg" class="scale-125" alt="">
+      <div class="flex justify-center mb-2">
+        <img src="./img/gmail.svg" alt="Gmail" />
+      </div>
+      <h2 class="max-w-sm leading-10 my-4 mt-8 text-4xl mx-auto">
+        Show the world how it's done
+      </h2>
+      <p class="text-2xl my-8 text-gray-500">
+        Get started with a more powerful gmail.
+      </p>
+      <div>
+        <button
+          class="bg-blue-600 text-white py-3 px-5 mr-2 font-semibold rounded-md hover:bg-blue-800 transition ease-in text-sm"
+        >
+          Create an account
+        </button>
+        <br />
+        <button
+          class="mt-4 w-40 text-blue-500 py-3 px-5 mr-2 font-semibold rounded-md hover:bg-gray-100 transition ease-in text-sm"
+        >
+          For work
+        </button>
+      </div>
+      <img src="./img/footer-img.jpg" class="scale-125" alt="" />
     </section>
 
     <footer class="bg-white py-8">
-        <div class="container md:flex">
-            <div class="md:flex md:w-3/5">
-                <img class="mb-6" src="./img/gray-logo.svg" alt="">
-                <a class="text-gray-500 mx-4 ml-0 md:ml-4 font-semibold hover:text-gray-800" href="#">Privacy</a>
-                <a class="text-gray-500 mx-4 font-semibold hover:text-gray-800" href="#">Terms</a>
-                <a class="text-gray-500 mx-4 font-semibold hover:text-gray-800" href="#">About Google</a>
-                <a class="text-gray-500 mx-4 font-semibold hover:text-gray-800" href="#">Products</a>
-                <a class="text-gray-500 mx-4 ml-0 font-semibold hover:text-gray-800" href="#">Policy</a>
-                <a class="text-gray-500 mx-4 font-semibold hover:text-gray-800" href="#">Privacy & Security</a>
-            </div>
-            <div class="flex justify-between md:w-2/5 mt-3 md:mt-0">
-                <div>
-                    <a href="#" class="text-gray-600 mr-5">
-                        <i class="fa fa-question mr-2"></i>
-                        Help
-                    </a>
-                    <a href="#" class="text-gray-600 font-semibold">English</a>
-                </div>
-                <div>
-                    <i class="fa fa-chevron-down text-gray-600 cursor-pointer"></i>
-                </div>
-            </div>
+      <div class="container md:flex">
+        <div class="md:flex md:w-3/5">
+          <img class="mb-6" src="./img/gray-logo.svg" alt="" />
+          <a
+            class="text-gray-500 text-sm mx-4 ml-0 md:ml-4 font-semibold hover:text-gray-800"
+            href="#"
+            >Privacy</a
+          >
+          <a
+            class="text-gray-500 text-sm mx-4 font-semibold hover:text-gray-800"
+            href="#"
+            >Terms</a
+          >
+          <a
+            class="text-gray-500 text-sm mx-4 font-semibold hover:text-gray-800"
+            href="#"
+            >About Google</a
+          >
+          <a
+            class="text-gray-500 text-sm mx-4 ml-0 md:ml-4 font-semibold hover:text-gray-800"
+            href="#"
+            >Products</a
+          >
+          <a
+            class="text-gray-500 text-sm mx-4 ml-0 font-semibold hover:text-gray-800"
+            href="#"
+            >Policy</a
+          >
+          <a
+            class="text-gray-500 text-sm mx-4 font-semibold hover:text-gray-800"
+            href="#"
+            >Privacy & Security</a
+          >
         </div>
+        <div class="flex justify-between md:w-2/5 mt-3 md:mt-0">
+          <div>
+            <a href="#" class="text-gray-600 mr-5">
+              <i class="fa fa-question text-sm mr-2"></i>
+              <span class="text-sm">Help</span>
+            </a>
+            <a href="#" class="text-gray-600 text-sm font-semibold">English</a>
+          </div>
+          <div>
+            <i class="fa fa-chevron-down text-gray-600 text-sm cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
     <script>
-        $(document).ready(function(){
-            $('.slider-controller')
-                .get()
-                .forEach(sC => {
-                    $(sC).on('click', function(){
-                        $(sC).find('.icon').toggleClass('hidden');
-                        $(sC)
-                            .next()
-                            .slideToggle('fast')
+      $(document).ready(function () {
+        $('.email-slide-controller')
+            .get()
+            .forEach(function(sC){
+                $(sC)
+                    .on('click', function(e){
+                        e.preventDefault();
+                        $('.email-slide-controller').removeClass('active'); // remove all active classes
+                        $(this).addClass('active'); // add active class to the clicked one
+
+                        // remove all slides
+                        $('[data-slide]').hide();
                         
+                        $(`[data-slide="${$(this).data('target')}"]`)
+                            .fadeIn();
                     })
-                })
-        })
+            })
+        
+ 
+        
+        $(".slider-controller")
+          .get()
+          .forEach((sC) => {
+            $(sC).on("click", function () {
+              $(sC).find(".icon").toggleClass("hidden");
+              $(sC).next().slideToggle("fast");
+            });
+          });
+      });
     </script>
-</body> 
+  </body>
 </html>
