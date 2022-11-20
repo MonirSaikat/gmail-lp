@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "watch":"tailwindcss -c ./tailwindcss-config.js -i src/styles/index.css -o dist/style.css --watch"
+    "watch":"tailwindcss -c ./tailwindcss-config.js -i src/styles/index.css -o dist/style.css --watch",
+    "start": "lite-server --baseDir=dist"
   },
   "keywords": [],
   "author": "",
